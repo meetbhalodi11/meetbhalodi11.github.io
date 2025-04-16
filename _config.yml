@@ -3,7 +3,7 @@ email: meet@yellojacket.dev
 description: >- 
   Welcome to the world of thought criminal
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://meetbhalodi11.github.io/yellowjacket" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://meetbhalodi11.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: meetbhalodi11
 github_username:  meetbhalodi11
 
