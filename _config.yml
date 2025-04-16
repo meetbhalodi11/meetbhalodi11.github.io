@@ -24,7 +24,7 @@ collections:
 header_pages:
   - tech.markdown
   - journal.markdown
-  - photography.markdown
+  # - photography.markdown
   - about.markdown
 
 # Exclude from processing.
