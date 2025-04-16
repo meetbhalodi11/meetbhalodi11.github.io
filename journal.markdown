@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Journal
-permalink: /journal/
+permalink: /blogs/journal/
 ---
 
 <style>
