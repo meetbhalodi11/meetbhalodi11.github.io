@@ -3,7 +3,7 @@ title: "Sunrise in the Himalayas"
 category: photography
 date: 2025-04-15
 layout: post
-image: /assets/images/photography/2.jpeg
+image: /assets/photography/2.jpeg
 description: "A peaceful morning captured in the Himalayan mountains with golden light."
 ---
 

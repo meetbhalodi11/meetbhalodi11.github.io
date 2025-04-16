@@ -1,9 +1,8 @@
 title: Meet Bhalodi
 email: meet@yellojacket.dev
 description: >- 
-  Welcome to the world of thought criminal
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://meetbhalodi11.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://meetbhalodi11.github.io"
 twitter_username: meetbhalodi11
 github_username:  meetbhalodi11
 
@@ -20,7 +19,13 @@ sass:
 collections:
   blogs:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:path/
+  
+header_pages:
+  - tech.markdown
+  - journal.markdown
+  - photography.markdown
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

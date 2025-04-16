@@ -1,0 +1,32 @@
+---
+title: "ng-India 2025: Key Highlights and Events"
+category: tech
+date: 2025-04-15
+layout: post
+description: "Explore the Largest Gathering of Angular Enthusiasts in India"
+---
+
+Attending my first ng-conf was an overwhelming experience, filled with insightful talks from talented developers worldwide. I gained a wealth of knowledge and feel inspired to share this with other developers as a way of giving back to the community.
+
+#### The overall agenda was as following
+
+### Talk 1: Intelligent frontends with Angular and Transformers.js
+
+This talk was about was bout Intelligent Frontends with Angular and Transformers.js. It covered using ML models in the frontend with transformers.js and explained how to implement ML models in browsers without relying on servers, ensuring privacy, speed, and scalability
+
+This is one of the best use cases for Web Workers—running ML models in the background without blocking the main thread.
+
+![alt text](/assets/tech/2025-04-15-ng-india-2025/talk1-1.webp)
+<br>
+
+![alt text](/assets/tech/2025-04-15-ng-india-2025/talk1-2.webp)
+
+<br>
+
+### Talk 2: Hidden gems in Angular
+
+Talk 2: Hidden gems in Angular
+This talk was about some of the hidden gems in Angular—and believe me, a few of these gems are hiding in plain sight. Often, they’re just a flag away from significantly improving your project's user experience. This was easily one of my favourite talks.
+
+Here’s one example: as shown in the image below, simply enabling the `withViewTransitions` function provided by Angular in the app's routing file allows your application to have smooth transitions between route changes.
+Alternatively, you can achieve the same effect by using:
