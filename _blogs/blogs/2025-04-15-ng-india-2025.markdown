@@ -25,8 +25,89 @@ This is one of the best use cases for Web Workers—running ML models in the bac
 
 ### Talk 2: Hidden gems in Angular
 
-Talk 2: Hidden gems in Angular
 This talk was about some of the hidden gems in Angular—and believe me, a few of these gems are hiding in plain sight. Often, they’re just a flag away from significantly improving your project's user experience. This was easily one of my favourite talks.
 
 Here’s one example: as shown in the image below, simply enabling the `withViewTransitions` function provided by Angular in the app's routing file allows your application to have smooth transitions between route changes.
 Alternatively, you can achieve the same effect by using:
+
+### Talk 3: Micro frontends and module federation
+
+This talk was about micro-frontends and module federation. It provided valuable insights into when micro-frontends should be used—and just as importantly, when they shouldn’t. One key takeaway was learning that Angular doesn’t natively support micro-frontend architecture out of the box.
+
+The speaker also delved into the topic of module federation, comparing the impact on build times between native federation and remote federation, which added an interesting layer of technical depth to the discussion.
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk3-1.webp)
+
+### Talk 4: Build on top of Signals
+
+This talk was about things we can build on top of signals. there are few in built things that angular provides that seemed interesting to me. here is couple of things I would like to show you
+
+`destroyRef`: this allows us to define the things to do when component id getting destroyed in constructor itself. below is the image for the reference
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk4-1.webp)
+
+`injectLocalStorage`: This utility is built on top of Angular signals, and it's a great example of how signals work in action.
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk4-2.webp)
+
+Imagine you have two tabs open of the same application. If you switch to dark mode in one tab (assuming the dark mode state is being saved in local storage), the second tab will automatically reflect the change as well. This real-time synchronisation across tabs showcases the reactive power of signals combined with local storage.
+
+### Talk 5: Angular projects with automated architecture validation
+
+This talk focused on how to properly architect an Angular project, along with the tools that help ensure the architecture is followed and maintained. It emphasised how defining a few thumb rules early on can prevent the project from becoming a tangled mess over time—what the speaker humorously referred to as getting "spaghettified."
+
+One example of such a thumb rule involves the structure of project libraries. Suppose your project has the following libraries: Core, Feature1, and Feature2.
+In this setup, Core should not import anything from Feature1 or Feature2. However, both Feature1 and Feature2 can import from Core. This directional dependency keeps the architecture clean and maintainable.
+
+To enforce these boundaries at scale, there's an ESLint package that can help ensure these architectural rules are respected throughout the codebase.
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk5-1.webp)
+<br>
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk5-2.webp)
+
+### Talk 6: Improving Web Performance in Angular Applications
+
+There are countless strategies to improve the performance of a web application, but one key area we often overlook is the weight of the DOM. A heavier DOM can slow down rendering and degrade user experience.
+
+So how do we make the DOM lighter? One simple answer: "Keep fewer elements rendered in the DOM."
+
+A popular approach—especially well-known in the React community—is virtual scrolling, and yes, it can be implemented in Angular as well. This technique ensures that only the visible elements are rendered, and off-screen elements are either removed or replaced, improving performance significantly.
+
+Another practical tip involves using certain CSS properties to reduce the DOM load. For example, applying the following styles can make a noticeable difference:
+
+```
+.item {
+    content-visibility: auto;
+    content-intrinsic-size: auto; 
+}
+```
+
+These properties help the browser skip rendering off-screen content until it comes into view, making initial load times and scrolling smoother.
+
+Additionally, on the JavaScript side, you can replace off-screen elements with placeholder empty <div>s when they’re not in the viewport. This approach keeps the DOM lighter and improves scroll performance. The concept is visually demonstrated in the image below.
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk6-1.webp)
+
+And as demonstrated, by implementing this approach—commonly referred to as `rxVirtualView—you` can significantly boost rendering efficiency. In fact, it can lead to green coloured performance metrics in Chrome DevTools, which indicates optimal frame rates and smooth scrolling.
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk6-1.webp)
+
+### Talk 7: Local and Zoneless Change Detection
+
+This was one of the most interesting sessions, especially because it addressed a problem we often encounter in real-world scenarios—managing change detection across components, particularly in parent-child relationships.
+
+The speaker discussed the well-known technique of removing zone.js to take full control over change detection. Instead of relying on Angular's default global mechanism, the approach uses Signals combined with ChangeDetectionStrategy.OnPush to enable local change detection. This means that when something changes inside a component, it doesn't trigger change detection for the entire component tree. Instead, only the component itself handles it—making updates more efficient and predictable.
+
+There’s also a great Medium article that goes deeper into this concept for those who want to explore it further.
+
+One cool new trick I learned during this talk was how to monkey-patch Angular to display a counter showing how many times change detection has run at the application level. The speaker shared a code snippet (shown in the image below) that demonstrates this in action—a super handy tool for debugging and optimisation.
+
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk7-1.webp)
+
+There were so many new things to learn from this event, and I truly enjoyed putting my thoughts together and sharing them with you. I hope you liked my style of writing! If you have any questions, need clarifications, or even have some constructive criticism—I’m all ears and happy to hear it.
+
+Until next time, see you around! 😊
+
+
+
