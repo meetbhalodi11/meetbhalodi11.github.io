@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Journal
-permalink: /journal/
+title: Blogs
+permalink: /blogs/
 ---
 
 <style>
@@ -9,7 +9,7 @@ permalink: /journal/
         text-decoration: none !important;
     }
 
-    .journal-entry-title {
+    .resolutions-entry-title {
         font-size: 1.4rem;
         font-weight: 600;
         margin-bottom: 6px;
@@ -17,7 +17,7 @@ permalink: /journal/
         text-decoration: none;
     }
 
-    .journal-entry-date {
+    .resolutions-entry-date {
         font-size: 0.9rem;
         color: #888;
         margin-bottom: 12px;
@@ -25,12 +25,12 @@ permalink: /journal/
 
 </style>
 
-<div class="journal-container">
+<div class="blogs-container">
   {% for item in site.blogs %}
-    {% if item.category == "journal" %}
+    {% if item.category == "blogs" %}
       <div style="margin-top: 0.4rem">
         <a href="{{ item.url }}" class="td-none">
-          <span class="journal-entry-date">{{ item.date | date: "%B %d, %Y" }}</span>
+          <span class="resolutions-entry-date">{{ item.date | date: "%B %d, %Y" }}</span>
           <span style="margin-left: 0.4rem">{{ item.title }}</span>
         </a>
       </div>

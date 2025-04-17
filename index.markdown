@@ -43,14 +43,14 @@ layout: home
     {% endfor %}
 
 
-  <!-- Recent Journal Posts -->
-  {% assign journal_entries = site.blogs | where_exp: "post", "post.url contains 'journal'" | sort: 'date' | reverse %}
-  {% if journal_entries.size > 0 %}
+  <!-- Recent Resolutions Posts -->
+  {% assign resolutions_entries = site.blogs | where_exp: "post", "post.url contains 'resolutions'" | sort: 'date' | reverse %}
+  {% if resolutions_entries.size > 0 %}
   <div style="margin-top: 1.2rem">
-    <h2>Journals</h2>
+    <h2>Resolutions</h2>
   </div>
   <div>
-    {% for post in journal_entries limit: 10 %}
+    {% for post in resolutions_entries limit: 10 %}
       <div style="margin-top: 0.4rem">
         <a href="{{ post.url }}" class="td-none">
           <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>

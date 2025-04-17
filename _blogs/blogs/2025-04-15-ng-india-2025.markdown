@@ -1,6 +1,6 @@
 ---
 title: "ng-India 2025: Key Highlights and Events"
-category: tech
+category: blogs
 date: 2025-04-15
 layout: post
 description: "Explore the Largest Gathering of Angular Enthusiasts in India"
@@ -16,10 +16,10 @@ This talk was about was bout Intelligent Frontends with Angular and Transformers
 
 This is one of the best use cases for Web Workers—running ML models in the background without blocking the main thread.
 
-![alt text](/assets/tech/2025-04-15-ng-india-2025/talk1-1.webp)
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk1-1.webp)
 <br>
 
-![alt text](/assets/tech/2025-04-15-ng-india-2025/talk1-2.webp)
+![alt text](/assets/blogs/2025-04-15-ng-india-2025/talk1-2.webp)
 
 <br>
 

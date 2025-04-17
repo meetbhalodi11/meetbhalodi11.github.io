@@ -22,9 +22,8 @@ collections:
     permalink: /:path/
   
 header_pages:
-  - tech.markdown
-  - journal.markdown
-  # - photography.markdown
+  - blogs.markdown
+  - resolutions.markdown
   - about.markdown
 
 # Exclude from processing.

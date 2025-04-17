@@ -1,7 +1,0 @@
----
-title: "My First Journal"
-category: journal
-layout: post
-date: 2025-04-15
-description: "this is a test description"
----
