@@ -9,14 +9,6 @@ permalink: /resolutions/
         text-decoration: none !important;
     }
 
-    .resolutions-entry-title {
-        font-size: 1.4rem;
-        font-weight: 600;
-        margin-bottom: 6px;
-        color: #333;
-        text-decoration: none;
-    }
-
     .resolutions-entry-date {
         font-size: 0.9rem;
         color: #888;
