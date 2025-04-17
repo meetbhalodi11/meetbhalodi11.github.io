@@ -32,6 +32,7 @@ jobs:
           branch: 'gh-pages'         # Default is gh-pages for github provider
           jekyll_src: './'           # Default is root directory
           jekyll_cfg: '_config.yml'  # Default is _config.yml
+          cname: 'mustard.yellowjacket.dev'
           jekyll_baseurl: ''         # Default is according to _config.yml
           ruby_ver: ''               # Default is 3.2.0 version
           bundler_ver: ''            # Default is compatible bundler version (~>2.5.0)
